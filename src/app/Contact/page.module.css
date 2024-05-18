@@ -1,0 +1,108 @@
+
+.contactContainer {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 50%);
+    background: var(--transparentBakground);
+    animation: fadeIn 0.5s ease;
+}
+
+.colorBlock {
+    height: 300px;
+    box-shadow: 0 0 10px rgb(0 0 0);
+    border-radius: 15px 15px 5px 5px;
+}
+
+.contactForm {
+    padding: 20px;
+}
+.empty {
+    height: 37px;
+    font-size: 1.1rem;
+    padding-top: 3px;
+    text-align: center;
+    border: 2px dashed green;
+    margin: 20px auto;
+    width: 320px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    background-color: var(--backgroundtransparent);
+}
+.contactLabel {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.contactInput {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: var(--Micon);
+    border: 2px dashed var(--foreground);
+    border-radius: 6px;
+    font-size: 19px;
+    text-align: center;
+}
+
+.contactInput[type="textarea"] {
+    height: 150px;
+    max-width: 520px;
+}
+
+.contactSubmit {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--border);
+    border: 2px dashed;
+    color: var(--foreground);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 19px;
+    text-align: center;
+}
+
+.contactSubmit:hover {
+    background-color: #2980b9;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width:768px) {
+ .contactContainer{
+    margin: 50px 10px;
+ }
+ .colorBlock{
+    width: 360px;
+ }
+ .contactInput{
+    width: 108%;
+    margin-left: -8px;
+ }
+}
+@media (max-width:393px) {
+    .colorBlock {
+        width: 335px;
+    }
+
+}
+@media (max-width:375px) {
+     .colorBlock {
+        width: 300px;
+    }
+ 
+}
+

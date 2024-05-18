@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&family=Poppins:wght@400;700;900&family=Young+Serif&display=swap');
+.maintitle{
+    text-align: center;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;    font-size: 2.3rem;
+    color: var(--textColor);}
+.maincontainer{
+    border: 2px solid var(--thirdcolor);
+    border-radius: 5px;
+    text-decoration: none;
+    height: -webkit-fill-available;
+    color: black;
+}
+.maincontainer:hover{
+    border: 2px solid var(--ProductTransparent);
+    transition: ease-in-out .1s;
+    transform: scale(1.010);
+}
+.cards {
+    display: grid;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    overflow: hidden;
+    transition: ease-in-out .45s;
+}
+.img{
+    display: flex;
+    background-color: #c0c0c0;
+    width: 85%;
+    border-radius: 3PX;
+    transition: ease-in-out .2s;
+    margin: 20px auto;
+}
+.card{
+    height: auto;
+}
+.description{
+    display: flex;
+    max-width: 211px;
+    font-size: 11.5px;
+    max-height: 31px;
+    overflow:hidden;
+    color: gray;
+    margin: 0px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.container2{
+    box-shadow: 0px -7px 6px 0px rgb(73 73 73 / 30%);
+    color: var(--textColor);
+    height: 100px;
+    border-radius: 4px;
+    background: var(--DarkenMobilelinearColor)
+}
+
+.container2:hover{
+    background-color:var(--ProductTransparent);
+    transition: ease-in-out .1s;
+}
+.container3 {
+    box-shadow: 0px -7px 6px 0px rgb(73 73 73 / 30%);
+    color: var(--textColor);
+    height: 116px;
+    background: var(--DarkenMobilelinearColor)
+    
+}
+.container3:hover {
+    background-color: var(--ProductTransparent);
+    transition: ease-in-out .1s;
+}
+
+.qty{
+    position: relative;
+    top: -38px;
+    left: 150px;
+    width: fit-content;
+    color: rgb(82, 82, 82);
+    font-size: 0.85rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--textColor);
+}
+.Sqty{
+    position: relative;
+    top: -20px;
+    left: 150px;
+    color: rgb(82, 82, 82);
+}
+.Ptitle{
+    padding-top: 9px;
+    font-family: 'Poppins', sans-serif;
+    margin: 1px 10px;
+    font-size: 15px;
+    overflow: hidden;
+    height: 32px;
+    color: var(--textColor);
+}
+.price{
+    margin: 10px 10px;
+    font-size: .95rem;
+    margin-bottom: 20px;
+    color: rgb(59, 59, 59);
+    font-family: 'Poppins', sans-serif;
+    color: var(--textColor);
+}
+.btn{
+    position: relative;
+    margin: 10px auto;
+    height: 50px;
+    width: 150px;
+    color: var(--mainTextColor);
+    border: 2.5px solid var(--mainTextColor);
+    border-radius: 5px;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14.5px;
+    transition: ease-in-out .1s;
+}
+.btn:hover{
+    background-color: var(--mainTextColor);
+    color: white;
+    transition: ease-in-out .1s;
+    font-size: 15px;
+}
+.centerButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.search {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 710px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    height: 50px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+.search:focus {
+    border: 2px solid rgb(151, 123, 0);
+    opacity: 1;
+    outline: none;
+}
+.pagination{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.paginationbtn{
+    border-radius: 5px;
+    background-color: var(--backgroundtransparent);
+    height: 35px;
+    width: 40px;
+    border: none;
+    margin: 10px;
+    font-size: 1.1rem;
+}
+.activePage {
+    background-color: #404040;
+    color: #fff;
+   
+}
+.inputcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 75px;
+    background: var(--DarkLinearGradiant);
+    color: var(--textColor);
+    position: relative;
+    top: -8px;
+    box-shadow: rgb(73 73 73 / 30%) 0px 0px 14px 0px;
+}
+.cnumber{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.inputcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.priceFilter {
+    display: flex;
+    align-items: center;
+}
+
+.priceFilter label {
+    margin-right: 10px;
+    /* Add some spacing between the label and the select */
+}
+
+.rightContent {
+    display: flex;
+    align-items: center;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: end;
+}
+.Show{
+    align-items: center;
+    margin-bottom: 15px;
+}
+.sort{
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 30px;
+    border: none;
+    margin: 10px;
+    margin-right: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+.priceRange{
+    width: 127px;
+    height: 30px;
+    border: none;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+.PriceRangeLable{
+    margin: 20px;
+}
+
+.loadComponent {
+    transition: ease-in-out 2.5s;
+}
+
+.loadingIMG {
+    display: flex;
+    margin: 30px auto;
+}
+.CloadingIMG{
+    display: flex;
+    position: relative;
+    left: 200%;
+}
+@media (max-width:768px) {
+    .price{
+        margin-left: 5px 5px;
+        font-size: 0.85rem;
+    }
+    .cards{
+        grid-template-columns:repeat(2, 1fr);
+        width: 400px;
+        gap: 0px;
+        
+    }
+    .qty{
+        left: 105px;
+        top: -41px;
+    }
+    .container2{
+        width: 171px !important;
+        margin-left: 3px !important;
+        height: 93px;
+    }
+    .maincontainer{
+        width: 182px;
+        margin: 10px auto;
+        margin-left: 6px;
+        height: 373px;
+    }
+    .img{
+        width: 90%;
+    }
+    .priceFilter {
+         font-size: 0.9rem;
+         margin: 5px !important;
+         width: 35px;
+    }
+    .PriceRangeLable{
+        margin: 5px;
+    }
+    .priceRange{
+        width: 42px;
+        height: 52px;
+        margin: 5px;
+    }
+    .search{
+        width: 105px;
+    }
+    .sort{
+        width: 65px;
+        margin-right: 7px;
+        height: 42px;
+    }
+    .Show{
+        display: none;
+    }
+    .sortlable{
+       display: none;
+     }
+     .number{
+       width: 33px;
+       height: 42px;
+       margin: 2px;
+       text-align: center;
+     }
+     .container3{
+        height: 131px;
+        margin-left: 3px !important;
+        height: 93px;
+    }
+     .maintitle {
+        font-size: 1.3rem;
+        margin: 10px;
+        margin-top: 20px;
+        }
+}
+
+
+@media (max-width:375px) {
+    .cards{
+        width: 350px;
+    }
+    .maincontainer{
+        width: 168px;
+        margin-left: 4px;
+    }
+    .container2{
+        width: 158px !important;
+    }
+    .qty{
+        left: 95px;
+    }
+}

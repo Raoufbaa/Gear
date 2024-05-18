@@ -1,0 +1,250 @@
+.aboutPage {
+    padding: 40px 20px;
+    max-width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 60px;
+    background: var(--transparentBakground);
+    color: var(--foreground);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0px 12px var(--secondColor);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: ease-in-out 1s;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    transition: ease-in-out 1s;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: var(--foreground);
+}
+
+.subtitle {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--foreground);
+}
+
+.description {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--foreground);
+    margin: 0px 15px;
+    margin-bottom: 15px;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.image {
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image:hover,
+.image:focus {
+    transform: scale(1.1);
+}
+
+
+.socialMediaIcons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.socialIcon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: var(--foreground);
+}
+
+
+
+
+.linkButton {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    appearance: none;
+    background: var(--Micon);
+    border: 2px solid #1A1A1A;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: var(--foreground);
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 17px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 30px;
+    width: 280px;
+    min-width: 0;
+    outline: none;
+    padding: 6px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    border: 2px dashed;
+    height: 43px;
+}
+
+.linkButton:disabled {
+    pointer-events: none;
+}
+
+.linkButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    background-color: white;
+    border: 2px dashed black;
+    transition: ease-in-out .3s;
+    color: black;
+}
+
+.linkButton:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+@media (max-width:768px) {
+   .section{
+    margin-left: -20px;
+    width: 343px;
+    font-size: 17px;
+   }
+   .description{
+    line-height: 1.3;
+    position: relative;
+    left: -17px;
+    width: 299px;
+    margin: none;
+   }
+   .image{
+    width: 284px;
+    height: 121px;
+   }
+   .imageContainer{
+    flex-direction: column;
+    gap: 15px;
+   }
+}
+@media (max-width:450px) {
+    .section {
+        margin-left: -20px;
+        width: 394px;
+        font-size: 17px;
+    }
+
+    .description {
+        line-height: 1.3;
+            width: 299px;
+        margin: none;
+    }
+
+    .image {
+        width: 340px;
+        height: 121px;
+    }
+
+    .imageContainer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+@media (max-width:403px) {
+    .section {
+        margin-left: -20px;
+        width: 384px;
+        font-size: 17px;
+    }
+
+    .description {
+        line-height: 1.3;
+        width: 340px;
+        margin: none;
+    }
+
+    .image {
+        width: 329px;
+        height: 121px;
+    }
+
+    .imageContainer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+@media (max-width:393px) {
+    .section {
+        margin-left: -20px;
+        width: 371px;
+        font-size: 17px;
+    }
+
+    .description {
+        line-height: 1.3;
+        width: 299px;
+        margin: none;
+    }
+
+    .image {
+        width: 307px;
+        height: 121px;
+    }
+
+    .imageContainer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width:365px) {
+    .section {
+        margin-left: -20px;
+        width: 343px;
+        font-size: 17px;
+    }
+
+    .description {
+        line-height: 1.3;
+        position: relative;
+        left: -17px;
+        width: 299px;
+        margin: none;
+    }
+
+    .image {
+        width: 284px;
+        height: 121px;
+    }
+
+    .imageContainer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

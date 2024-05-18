@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&family=Poppins:wght@200;300;400;700;900&family=Young+Serif&display=swap');
+.Container {
+    max-width: 413px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: var(--backgroundtransparent);
+    border-radius: 10px;
+    border: 3px solid rgb(119, 119, 119);
+    transition: ease-in-out .5s;
+}
+
+.Header {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 10px;
+    color: var(--mainTextColor);
+    font-family: 'Poppins', sans-serif;}
+
+.form {
+    margin-top: 20px;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formLabel {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formInput {
+    margin: 10px;
+    height: 50px;
+    width: 350px;
+    border-radius: 10px;
+    border: 2px dashed #c7c7c7;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.formInput:focus{
+    border: 2px dashed black;
+    outline: none;
+    transition: ease-in-out .5s;
+}
+.submitButton {
+    background-color: #222;
+        border-radius: 4px;
+        border-style: none;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 0;
+        max-width: none;
+        min-height: 44px;
+        min-width: 10px;
+        outline: none;
+        overflow: hidden;
+        padding: 9px 20px 8px;
+        position: relative;
+        left: 17px;
+        border: 2px dashed var(--foreground);
+        text-align: center;
+        text-transform: none;
+        -moz-user-select: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 335px;
+}
+
+
+
+.successMessage {
+    background-color: rgb(2 18 2 / 83%);
+    color: #ffffff;
+    border: 2px dashed green;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px 20px;
+    width: 330px;
+}
+.ErrorsMessage{
+    background-color: rgba(18, 2, 2, 0.83);    
+    font-size: 1.2rem;
+    color: #ffffff;
+    border: 2px dashed rgb(128, 0, 0);
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px 20px;
+    width: 310px;
+}
+.error {
+    margin-top: 10px;
+    text-align: center;
+    color: red;
+}
+.lable{
+    font-size: 1.2rem;
+    text-align: center;
+}
+@media (max-width:768px) {
+    .Container {
+        width: 343px;
+    }
+
+    .formInput {
+        width: 278px;
+    }
+    .submitButton{
+        width: 267px;
+    }
+}

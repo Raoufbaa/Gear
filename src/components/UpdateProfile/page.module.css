@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&family=Poppins:wght@200;300;400;700;900&family=Young+Serif&display=swap');
+.input{
+    margin: 10px;
+    height: 50px;
+    width: 350px;
+    border-radius: 10px;
+    border: 2px dashed #c7c7c7;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.input:focus{
+    border: 2px dashed black;
+    outline: none;
+    transition: ease-in-out .5s;
+}
+.title{
+    font-size: 1.7rem;
+    margin: 10px;
+    color: var(--mainTextColor);
+    font-family: 'Poppins', sans-serif;
+}
+.subtitle{
+font-size: 1.5rem;
+    margin: 10px;
+    color: var(--mainTextColor);
+    font-family: 'Poppins', sans-serif;
+}
+.list{
+    display: flex;
+    height: 55px;
+    gap: 20px;
+    padding: 0px 10px ;
+    color: white;
+    background-color: #222222;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.selected{
+    background-color: rgb(255, 255, 255);
+    border: 2px dashed #454545;
+
+    color: rgb(85, 85, 85);
+}
+.deletebtn{
+    font-size: 2rem;
+    background-color: transparent;
+    color: red;
+    border: none;
+    height: 33px;
+}
+
+.btn {
+    background-color: #222;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    max-width: none;
+    min-height: 44px;
+    min-width: 10px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 20px 8px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 88%;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75;
+}
+
+@media (max-width:768px) {
+   
+    .input {
+        width: 297px;
+    }
+}

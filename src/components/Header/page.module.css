@@ -1,0 +1,76 @@
+.Iheader{
+    width: 100vw;
+}
+.imageContainer{
+    background: url(../../assets/header/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ProductContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.ImageContainer {
+    margin-right: 20px;
+}
+
+.Pimg{
+    margin: 40px 0px;
+    border-radius: 5px;
+    padding: 1px;
+    border: 2px dashed var(--foreground);
+}
+.TextContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    justify-content: center;
+    background-color: var(--backgroundtransparent);
+    border: 2px dashed;
+    height: 310px;
+    width: 900px;
+    border-radius: 10px;
+    padding: 30px;
+    
+}
+.titletext{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 2rem;
+    color: white;
+}
+.btn{
+  background-color: var(--mainTextColor);
+    color: white;
+    position: absolute;
+    top: 255px;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 25px 72px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+  
+}
+@media (max-width:768px) {
+  .Pimg{
+    margin: 6px 0px;
+    margin-left: 21px;
+    width: 340px;
+  }
+  .TextContainer{
+    flex-direction: column;
+    width: 345px;
+    margin-bottom: 30px;
+  }
+  .ProductContainer{
+    flex-direction: column;
+  }
+
+
+}

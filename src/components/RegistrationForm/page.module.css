@@ -1,0 +1,114 @@
+.register{
+  margin: 50px auto;
+  text-align: center;
+  padding: 10px 10px;
+  background: var(--DarkLinearGradiant);
+  max-width:450px;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid var(--cartbackgroundlenth);
+}
+.title{
+    font-size: 1.5rem;
+    margin: 20px ;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.input{
+    height: 50px;
+    width: 350px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 1.1rem;
+    background: var(--DarkLinearGradiant);
+    border: 2px dashed var(--Menubackground);
+}
+.empty{
+    height: 37px;
+    font-size: 1.2rem;
+    padding-top: 3px;
+    text-align: center;
+    border: 2px dashed green;
+    color: white;
+    margin: 20px auto;
+    width: 320px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    background-color: rgb(2 18 2 / 81%);
+    }
+.Eempty {
+    height: 37px;
+    font-size: 1.1rem;
+    padding-top: 3px;
+    text-align: center;
+    border: 2px dashed rgb(128, 0, 0);
+    color: white;
+    margin: 20px auto;
+    width: 320px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    background-color: rgba(18, 2, 2, 0.81);
+}
+.btn{
+    background-color: var(--mainTextColor);
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    max-width: none;
+    min-height: 44px;
+    min-width: 10px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 20px 8px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 80%;
+}
+.btn:hover,
+.btn:focus {
+    opacity: .75;
+}
+.Link{
+    text-decoration: none;
+    font-size: 1.1rem ;
+    color: var(--mainTextColor);
+    margin: 5px;
+    margin-bottom: 20px;
+}
+.link1{
+    text-decoration: none;
+    color: var(--foreground);
+    margin: 8px;
+    margin-left: 5px;
+    font-size: 1.05rem;
+}
+.link1:hover{
+    color: var(--mainTextColor);
+}
+@media (max-width:768px) {
+  .register{
+    width: 343px;
+  }
+  .input{
+    height: 46px;
+    width: 305px;
+  }
+}
